@@ -1,0 +1,69 @@
+/*
+.message1,.message2 {
+    float: left;
+    !*
+    width: 300px;
+    *!
+    !*height: 80px;*!
+    margin: 0.2em 750px 1em auto;
+    background-color: cornflowerblue;
+    border-bottom-color:green;!*为了给after伪元素自动继承*!
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial;
+    line-height: 18px;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+    word-break: break-all;
+}
+*/
+/*
+聊天item采用flex布局
+*/
+.item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.left {
+    flex-direction: row;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.right .message {
+    margin-right: 10px;
+}
+
+.left .message {
+    margin-left: 10px;
+}
+
+.header-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+}
+
+.message {
+    border-radius: 2px;
+    display: inline-block;
+    background: #efefef;
+    min-height: 25px;
+    padding: 5px 6px;
+    align-items: center;
+    color: #222121;
+    word-wrap: break-word;
+    word-break: normal;
+    max-width: 500px
+}
+
+.chart-timer {
+    text-align: center;
+    color: #616161;
+    font-size: 13px;
+}
